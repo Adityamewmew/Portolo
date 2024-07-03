@@ -1,0 +1,251 @@
+/* Set warna latar belakang body menjadi hitam */
+body {
+    background-color: black;
+}
+
+/* Gaya untuk gambar latar belakang pertama */
+.bg-1 {
+    /* Gunakan font "Poppins" */
+    font-family: "Poppins", sans-serif;
+    /* Atur gambar latar belakang menjadi gradient linear dengan efek transparan ke opak, kemudian gambar yang ditentukan */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/shiraito-waterfall-autumn-japan.jpg');
+    /* Atur ukuran latar belakang untuk mencakup seluruh elemen */
+    background-size: cover;
+    /* Posisikan gambar latar belakang di tengah */
+    background-position: center;
+    /* Jangan ulangi gambar latar belakang */
+    background-repeat: no-repeat;
+    /* Buat animasi bernama "changeBg" yang berlangsung 20 detik dan berulang secara tak terbatas */
+    animation: changeBg 20s infinite;
+    /* Atur tinggi elemen menjadi 700 piksel */
+    height: 700px;
+    /* Reset margin dan padding menjadi 0 */
+    margin: 0;
+    padding: 0;
+    /* Sembunyikan konten yang melebihi batas elemen */
+    overflow: hidden;
+    /* Posisikan elemen relatif terhadap posisinya normal dalam aliran dokumen */
+    position: relative;
+    /* Atur urutan tumpukan elemen */
+    z-index: 2;
+}
+
+/* Tentukan keyframes untuk animasi "changeBg" */
+@keyframes changeBg {
+    /* Pada 0% animasi, gunakan gambar latar belakang yang ditentukan */
+    0% { background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/adventure.jpg'); }
+    /* Pada 25% animasi, gunakan gambar latar belakang yang berbeda */
+    25% { background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/racism.jpg'); }
+    /* Pada 50% animasi, gunakan gambar latar belakang lainnya */
+    50% { background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/shiraito-waterfall-autumn-japan.jpg'); }
+    /* Pada 75% animasi, gunakan gambar latar belakang yang berbeda lagi */
+    75% { background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/solidarity-concept-illustration_114360-6286.avif'); }
+    /* Pada 100% animasi, gunakan gambar latar belakang akhir */
+    100% { background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../img/desaign.jpg'); }
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    font-size: 16px;
+}
+.nav-link.active{
+    font-weight: 500;
+}
+.but-2 {
+    width: 133px; /* Lebar tombol */
+    height: 40px; /* Tinggi tombol */
+    background-color: #F1FAFF; /* Warna latar belakang */
+    color: black; /* Warna teks */
+    border: none; /* Tanpa border */
+    border-radius: 20px; /* Border radius */
+    font-weight: 600; /* Atur tebal font */
+}
+
+.but-1 {
+    font-weight: 500; /* Atur tebal font */
+    border: none; /* Tanpa border */
+    background: transparent; /* Latar belakang transparan */
+}
+
+.welcome-text p {
+    position: absolute; /* Posisi absolut */
+    top: 40%; /* Jarak dari atas */
+    left: 50%; /* Jarak dari kiri */
+    transform: translate(-50%, -50%); /* Pusatkan teks */
+    color: white; /* Warna teks */
+    font-size: 48px; /* Ukuran font */
+    font-weight: 600; /* Atur tebal font */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    height: 100px; /* Tinggi elemen */
+    z-index: 1; /* Indeks z untuk tumpukan */
+}
+
+.search-container {
+    position: absolute; /* Posisi absolut */
+    top: 46%; /* Jarak dari atas */
+    left: 50%; /* Jarak dari kiri */
+    transform: translate(-50%, -50%); /* Pusatkan kontainer */
+    display: flex; /* Gunakan flexbox */
+    max-width: 100%; /* Lebar maksimum kontainer */
+    width: 1000px; /* Lebar kontainer */
+    margin-top: 20px; /* Jarak dari atas */
+    z-index: 1; /* Indeks z untuk tumpukan */
+}
+
+
+input[type="text"] {
+    flex: 1; /* Membuat input teks fleksibel */
+    padding: 10px; /* Padding dalam input teks */
+    font-size: 12px; /* Ukuran font */
+    border: var(--secColor); /* Warna border */
+    border-radius: 5px 0 0 5px; /* Border radius */
+    outline: none; /* Hilangkan outline */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-weight: 300; /* Ketebalan font */
+}
+
+button[type="submit"] {
+    padding: 10px 20px; /* Padding tombol */
+    background-color: black; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Tanpa border */
+    border-radius: 0 5px 5px 0; /* Border radius */
+    cursor: pointer; /* Kursor pointer */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-weight: 300; /* Ketebalan font */
+}
+
+.pencarian {
+    width: auto; /* Lebar otomatis */
+    height: 500px; /* Tinggi elemen */
+}
+
+.container1 img {
+    width: 120px; /* Lebar gambar */
+    height: 200px; /* Tinggi gambar */
+    border-radius: 10px; /* Border radius */
+    margin: 10px 20px; /* Margin */
+    transition: transform 0.3s; /* Transisi transformasi */
+}
+
+
+ .container1 img:hover {
+    transform: scale(1.05); /* Memperbesar gambar sebesar 5% saat kursor berada di atasnya */
+}
+#about {
+    width: 100%; /* Lebar elemen */
+    padding: 2.5rem 0; /* Padding atas dan bawah */
+}
+
+.about-container {
+    width: 900px; /* Lebar kontainer */
+    margin: auto auto; /* Posisi margin */
+}
+
+.image-gallery {
+    display: flex; /* Menggunakan flexbox */
+    width: 100%; /* Lebar elemen */
+    min-height: 300px; /* Tinggi minimum */
+    justify-content: space-between; /* Penyusunan item */
+    margin-bottom: 2rem; /* Margin bawah */
+}
+
+.image-box {
+    width: 22%; /* Lebar kotak gambar */
+    height: 250px; /* Tinggi kotak gambar */
+    position: relative; /* Posisi relatif */
+}
+
+.image-box img {
+    width: 100%; /* Lebar gambar */
+    height: 100%; /* Tinggi gambar */
+    object-fit: cover; /* Penyesuaian objek gambar */
+    transition: 0.3s; /* Transisi */
+    border-radius: 20px; /* Border radius */
+}
+
+.image-box:nth-child(odd) {
+    align-self: flex-end; /* Penyusunan ke bawah */
+}
+
+.image-box img:hover {
+    transform: scale(1.05); /* Perbesar saat dihover */
+}
+
+.about-info {
+    color: #F1FAFF; /* Warna teks */
+    text-align: center; /* Penyusunan teks */
+    font-size: 1rem; /* Ukuran font */
+    font-weight: 400; /* Ketebalan font */
+}
+
+.about-info1 {
+    color: #F1FAFF; /* Warna teks */
+    text-align: center; /* Penyusunan teks */
+    font-weight: 500; /* Ketebalan font */
+    font-size: 24px; /* Ukuran font */
+}
+
+.footer-container{
+    color: #F1FAFF;
+
+}
+footer{
+    background-color: #F1FAFF;
+    box-sizing: border-box;
+}
+.penutup{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icon a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 80px;
+
+}
+.icon a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+.icon a:hover{
+    background-color: #F1FAFF;
+    transform: 0.5s;
+}
+.icon a:hover i{
+    color: black;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    background-color: #F1FAFF;
+    padding: 20px;
+    text-align: center;
+}
